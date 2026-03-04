@@ -1,3 +1,4 @@
+import { Link } from "expo-router";
 import {
   Text,
   View,
@@ -5,7 +6,6 @@ import {
   TextInput,
   ActivityIndicator,
 } from "react-native";
-import { Image } from "expo-image";
 
 export default function Index() {
   return (
@@ -13,12 +13,7 @@ export default function Index() {
       <Text style={styles.title}>
         Edit src/app/index.tsx to edit this screen.
       </Text>
-      <Image
-        source={{
-          uri: "https://unsplash.com/photos/pink-and-yellow-hello-neon-light-3SIXZisims4",
-        }}
-        style={styles.image}
-      />
+      <Link href={"/about"}>Go to ABOUT</Link>
       <TextInput placeholder='Email' />
       <ActivityIndicator size={"large"} />
     </View>
