@@ -1,4 +1,4 @@
-import { Text, View, StyleSheet } from "react-native";
+import { Text, View, StyleSheet, TextInput } from "react-native";
 import { Image } from "expo-image";
 
 export default function Index() {
@@ -13,6 +13,7 @@ export default function Index() {
         }}
         style={styles.image}
       />
+      <TextInput placeholder='Email' />
     </View>
   );
 }
